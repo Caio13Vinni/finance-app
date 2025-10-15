@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.0</version> <!-- Use a versão estável mais recente do Spring Boot 3 -->
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>3.3.1</version>
+        <relativePath/>
     </parent>
     <groupId>com.example</groupId>
     <artifactId>finance-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>finance-app</name>
-    <description>Clone do App de Finanças Pessoais</description>
+    <description>App de Finanças Pessoais</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -29,7 +29,7 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- Dependência para validação de dados (ex: @NotNull, @Email) -->
+        <!-- Dependência para validação de dados -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
