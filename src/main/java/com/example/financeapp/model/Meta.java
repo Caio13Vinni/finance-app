@@ -36,6 +36,11 @@ public class Meta {
     @Column(name = "data_limite")
     private LocalDate dataLimite;
 
+    @NotNull(message = "A categoria é obrigatória")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "categoria_id", nullable = false)
+    private Categoria categoria;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "usuario_id", nullable = false)
     private Usuario usuario;

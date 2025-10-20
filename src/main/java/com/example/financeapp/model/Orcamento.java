@@ -29,6 +29,11 @@ public class Orcamento {
     @Column(nullable = false)
     private PeriodoOrcamento periodo;
 
+
+    @Column(nullable = true)
+    private String descricao;
+
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "categoria_id", nullable = false)
     private Categoria categoria;
